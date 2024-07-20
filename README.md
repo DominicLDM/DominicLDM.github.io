@@ -1,2 +1,2 @@
 # DominicLDM.github.io
-Website
+Stinky Website
