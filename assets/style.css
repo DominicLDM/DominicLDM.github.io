@@ -1,4 +1,64 @@
 html {
     scroll-behavior: smooth;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background-color: #01162b;
+    margin-bottom: 0rem
+}
+nav ul {
+    list-style-type: none;
+    display: flex; float: none;
+    justify-content: left;
+    gap: 2.5rem;
+    width: 100%
+}
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #7e8bf5;
+}
+a:active {
+    color:#3f36c6
+}
+
+body {
+    font-family: Noto Sans;
+    background-color: #0c0018;
+    color: #e5e7eb;
+    font-weight:bold;
+    font-size: 20px;
+
+}
+
+body .indigo {
+    color: #7e8bf5;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#intro {
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
