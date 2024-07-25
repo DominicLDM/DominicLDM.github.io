@@ -20,7 +20,14 @@ nav {
     overflow-x: auto;
 }
 
-@media (max-width: 680px) {
+#DOM {
+    margin-top: -5px; 
+    margin-bottom: -10px; 
+    right: 0vh;
+    margin-left: auto;
+}
+
+@media (max-width: 750px) {
     nav {
         display:none;
     }
