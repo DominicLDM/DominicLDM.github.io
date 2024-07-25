@@ -8,26 +8,24 @@ html {
 }
 nav {
     position: sticky;
-    top: 0;
+    top: 30px;
     left: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.75rem 1rem;
-    background-color: #01162b;
-    margin-bottom: 0rem;
-    overflow-x: auto;
+    margin-bottom: 10px;
 }
 
 #DOM {
-    margin-top: -5px; 
+    margin-top: -20px; 
+    margin-left: 80px;
     margin-bottom: -10px; 
-    right: 0vh;
-    margin-left: auto;
+    margin-right: auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 880px) {
     nav {
         display:none;
     }
@@ -36,8 +34,11 @@ nav ul {
     list-style-type: none;
     display: flex; float: none;
     justify-content: left;
+    padding-top: 10px;
+    padding-right: 50px;
     gap: 2.5rem;
-    width: 100%
+    width: 100%;
+    margin-left: auto;
 }
 
 a {
@@ -106,13 +107,38 @@ body .indigo {
     opacity: 0;
 }
 
-.logo.active{
+.logo.active {
     bottom: 0;
     opacity: 1;
     transition: ease-in-out 0.5s;
 }
 
-.logo.fade{
+.logo.fade {
     bottom: 100vh;
     transition: ease-in-out 1s;
+}
+
+#about {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+#bio {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#pfp img{
+    border-radius: 50%;
+    margin: auto;
+}
+
+.socials {
+    
 }
