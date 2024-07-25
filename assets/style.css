@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -78,6 +79,7 @@ body {
     color: black;
     font-weight:bold;
     font-size: 20px;
+    position: relative;
 
 }
 
