@@ -38,6 +38,8 @@ nav {
         display:none;
     }
 }
+
+
 nav ul {
     list-style-type: none;
     display: flex; float: none;
@@ -167,7 +169,21 @@ body .indigo {
 #pfp img{
     border-radius: 50%;
     max-width: 100%;
+    height: auto;
 }
+#name {
+    font-size: 44px;
+}
+
+@media (max-width: 425px) {
+    #name {
+        font-size: 200%;
+    }
+    #bio {
+        font-size: 90%;
+    }
+}
+
 
 .fa {
     padding: 10px;
