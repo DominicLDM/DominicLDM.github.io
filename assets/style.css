@@ -8,7 +8,6 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 * {
     margin: 0;
@@ -213,6 +212,8 @@ body .indigo {
     width: 100%;
     height: 100%;
     z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .squares{
