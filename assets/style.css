@@ -110,6 +110,7 @@ body .indigo {
     position: absolute;
     justify-content: center;
     align-items: center;
+    width: 100%;
     left: 50%;
     top: 90%;
     transform: translate(-50%, -50%);
