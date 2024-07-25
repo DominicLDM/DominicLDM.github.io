@@ -166,6 +166,7 @@ body .indigo {
 
 #pfp img{
     border-radius: 50%;
+    max-width: 100%;
 }
 
 .fa {
