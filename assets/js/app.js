@@ -19,7 +19,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }, 3000);
         setTimeout(()=>{
             intro.style.top = '-100vh';
-        }, 3500)
-    })
+            logo.style.display = 'none';
+        }, 3680)
+    }, 250)
 
 })
