@@ -16,7 +16,14 @@ nav {
     justify-content: space-between;
     padding: 0.75rem 1rem;
     background-color: #01162b;
-    margin-bottom: 0rem
+    margin-bottom: 0rem;
+    overflow-x: auto;
+}
+
+@media (max-width: 680px) {
+    nav {
+        display:none;
+    }
 }
 nav ul {
     list-style-type: none;
