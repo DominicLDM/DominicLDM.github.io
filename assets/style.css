@@ -140,7 +140,7 @@ body .indigo {
 #about {
     margin-top: 7vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
     padding: 30px;
     text-align: center;
@@ -151,11 +151,11 @@ body .indigo {
 #bio {
     max-width: 800px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 #pfp img{
     border-radius: 50%;
-    margin: auto;
 }
 
 .fa {
