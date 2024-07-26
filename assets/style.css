@@ -97,13 +97,13 @@ html, body {
     top: -75%;
     background-color: black;
     width: 100%;
-    height: 22%;
+    height: 140px;
     transition: top .5s;
     justify-content: center;
     text-align: center;
 }
 .off-screen-menu.active {
-    top: 0;
+    top: 50px;
 }
 
 nav ul {
@@ -121,16 +121,20 @@ nav ul {
     position: relative;
     justify-content: space-around;
     width: 100%;
-    top: 18%;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
+#drop li {
+    position: relative;
+}
+
 #drop a {
-    color: #3f36c6;
+    color: #f0f1fa;
+    position: relative;
     display: block;
-    padding: 2%;
+    padding: 3.5px;
 }
 
 
