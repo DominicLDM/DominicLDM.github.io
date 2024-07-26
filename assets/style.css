@@ -14,7 +14,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
-nav {
+#regular {
     position: static;
     top: 30px;
     left: 0;
@@ -35,13 +35,75 @@ nav {
 }
 
 @media (max-width: 880px) {
-    nav {
-        display:none;
+    #regular {
+        display: none;
+        padding: 0px;
+        margin: 0px;
     }
 }
 
 #break {
-    display:none;
+    display: none;
+}
+
+#hamburger {
+    padding: 0rem;
+    background-color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 50px;
+    width: 50px;
+    position: sticky;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.ham-bar {
+    width: 90%;
+    height: 4px;
+    background-color: #f0f1fa;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+}
+.bar-top {
+    top: 25%;
+}
+.bar-bottom {
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+}
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+}
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+}
+
+.off-screen-menu {
+    position: fixed;
+    top: -75%;
+    background-color: black;
+    width: 100%;
+    height: 22%;
+    transition: top .5s;
+    justify-content: center;
+    text-align: center;
+}
+.off-screen-menu.active {
+    top: 0;
 }
 
 nav ul {
@@ -55,6 +117,23 @@ nav ul {
     margin-left: auto;
 }
 
+.off-screen-menu ul{
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    top: 18%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#drop a {
+    color: #3f36c6;
+    display: block;
+    padding: 2%;
+}
+
+
 a {
     text-decoration: none;
     color: black;
@@ -65,7 +144,7 @@ a:hover {
     color: #7987f8;
 }
 a:active {
-    color:#3f36c6
+    color:#3f36c6;
 }
 
 nav a::before {
@@ -194,7 +273,11 @@ body .indigo {
     }
 }
 
-
+@media (max-width: 880px) {
+    #hamburger {
+        display: flex;
+    }
+}
 .fa {
     padding: 10px;
     text-align: center;

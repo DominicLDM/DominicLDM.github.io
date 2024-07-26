@@ -1,6 +1,13 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
     document.querySelector('.animatedBg').style.height = '100vh';
+    window.scrollTo(0,1);
+    const hamMenu = document.querySelector('.hamburger-menu');
+    const offScreen = document.querySelector('.off-screen-menu');
+    hamMenu.addEventListener('click', ()=> {
+    hamMenu.classList.toggle('active');
+    offScreen.classList.toggle('active');
+    })
     let intro = document.querySelector('.intro');
     let logo = document.querySelector('.logo-header');
     let logoSpan = document.querySelectorAll('.logo');
