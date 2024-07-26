@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         }, 3680)
     }, 250)
     const header = document.querySelector('.sticky');
-        window.onscroll = () => {      
+    window.onscroll = () => {      
         if (window.scrollY > 0) {
             header.classList.add('blue');
         } else {
