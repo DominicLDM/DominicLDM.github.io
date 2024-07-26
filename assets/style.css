@@ -104,6 +104,7 @@ html, body {
 }
 .off-screen-menu.active {
     top: 50px;
+    position: absolute;
 }
 
 nav ul {
