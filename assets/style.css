@@ -244,7 +244,7 @@ body .indigo {
     position: relative;
     display: inline-block;
     text-align: center;
-    bottom: -50px;
+    bottom: -20vh;
     opacity: 0;
 }
 
@@ -293,11 +293,12 @@ body .indigo {
 
 @media (max-width: 426px) {
     #name {
-        font-size: 240%;
+        font-size: 225%;
+        padding: 0px 20px;
         line-height:40px;
     }
     #hook {
-        padding-top: 8px;
+        padding-top: 5px;
     }
     #bio {
         font-size: 75%;
