@@ -183,16 +183,22 @@ body .indigo {
     #bio {
         font-size: 90%;
     }
+    .fa {
+        font-size: 60px !important;
+    }
 }
 
 
 .fa {
     padding: 10px;
-    font-size: 40px !important;
     text-align: center;
     text-decoration: none;
     color: black;
     vertical-align: center;
+}
+
+.socials {
+    font-size: 40px;
 }
 
 .grow {
