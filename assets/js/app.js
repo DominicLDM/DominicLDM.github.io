@@ -1,5 +1,6 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
+    document.querySelector('.animatedBg').style.height = '100vh';
     let intro = document.querySelector('.intro');
     let logo = document.querySelector('.logo-header');
     let logoSpan = document.querySelectorAll('.logo');
