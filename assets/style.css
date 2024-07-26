@@ -294,9 +294,13 @@ body .indigo {
 @media (max-width: 426px) {
     #name {
         font-size: 240%;
+        line-height:40px;
+    }
+    #hook {
+        padding-top: 8px;
     }
     #bio {
-        font-size: 80%;
+        font-size: 75%;
     }
     .fa {
         font-size: 30px !important;
