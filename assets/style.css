@@ -291,26 +291,6 @@ body .indigo {
     font-size: 44px;
 }
 
-@media (max-width: 426px) {
-    #name {
-        font-size: 225%;
-        padding: 0px 20px;
-        line-height:40px;
-    }
-    #hook {
-        padding-top: 5px;
-    }
-    #bio {
-        font-size: 75%;
-    }
-    .fa {
-        font-size: 30px !important;
-    }
-    #me {
-        height: 250px;
-        width: 250px;
-    }
-}
 
 @media (max-width: 880px) {
     #hamburger {
@@ -337,7 +317,32 @@ body .indigo {
     transform: scale(1.1);
 }
 
-
+@media (max-width: 426px) {
+    #name {
+        font-size: 225%;
+        padding: 0px 20px;
+        line-height:40px;
+    }
+    #hook {
+        padding-top: 5px;
+    }
+    #bio {
+        font-size: 75%;
+    }
+    .fa {
+        font-size: 30px !important;
+    }
+    #socials {
+        margin-top: -10px;
+    }
+    .fa.fa-arrow-down {
+        padding-top: 0px !important;
+    }
+    #me {
+        height: 250px;
+        width: 250px;
+    }
+}
 .animatedBg {
     position: fixed;
     bottom: 0;
