@@ -229,6 +229,7 @@ body .indigo {
     list-style: none;
     position: absolute;
     width: 20px;
+    display: flex;
     aspect-ratio: 1/1;
     height: auto;
     background-color: lightblue;
