@@ -293,10 +293,10 @@ body .indigo {
 
 @media (max-width: 426px) {
     #name {
-        font-size: 200%;
+        font-size: 240%;
     }
     #bio {
-        font-size: 90%;
+        font-size: 80%;
     }
     .fa {
         font-size: 30px !important;
