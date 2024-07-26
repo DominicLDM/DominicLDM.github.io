@@ -336,12 +336,18 @@ body .indigo {
         margin-top: -10px;
     }
     .fa.fa-arrow-down {
-        padding-top: 0px !important;
+        padding-top: 1px !important;
+        margin-top: 0% !important;
     }
     #me {
         height: 250px;
         width: 250px;
     }
+}
+
+#arrow {
+    margin-top: 6vh; 
+    font-size: 40px;
 }
 .animatedBg {
     position: fixed;
