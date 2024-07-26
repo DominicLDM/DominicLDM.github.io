@@ -291,7 +291,7 @@ body .indigo {
     font-size: 44px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     #name {
         font-size: 200%;
     }
@@ -299,10 +299,11 @@ body .indigo {
         font-size: 90%;
     }
     .fa {
-        font-size: 50px !important;
+        font-size: 30px !important;
     }
-    #break {
-        display: block;
+    #me {
+        height: 250px;
+        width: 250px;
     }
 }
 
