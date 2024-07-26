@@ -30,5 +30,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
             logo.style.display = 'none';
         }, 3680)
     }, 250)
-
+    const header = document.querySelector('.sticky');
+        window.onscroll = () => {      
+        if (window.scrollY > 0) {
+            header.classList.add('blue');
+        } else {
+            header.classList.remove('blue');
+        }
+    }
 })

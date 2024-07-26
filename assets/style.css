@@ -26,11 +26,14 @@ html, body {
 }
 
 .sticky {
-    background-color: lightblue;
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
+}
+
+.sticky.blue {
+    background-color: lightblue !important;
 }
 
 #DOM {
