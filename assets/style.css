@@ -347,7 +347,6 @@ body .indigo {
     }
     #home {
         height: calc(100vh - 50px);
-        position: fixed;
     }
 }
 
