@@ -344,6 +344,7 @@ body .indigo {
     #me {
         height: 250px;
         width: 250px;
+        flex-grow: 1;
     }
     #home {
         height: calc(100vh - 50px);
