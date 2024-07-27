@@ -264,6 +264,7 @@ body .indigo {
     display: flex;
     flex-flow: column;
     align-items: center;
+    height: calc(100vh - 85.67px);
     padding: 20px;
     text-align: center;
     justify-content: center;
@@ -272,7 +273,8 @@ body .indigo {
 
 @media (min-height: 1080px) {
     #home {
-        margin-top: 10vh;
+        margin-top: 2vh;
+        height: calc(98vh - 85.67px);
     }
 }
 
@@ -343,6 +345,9 @@ body .indigo {
         height: 250px;
         width: 250px;
     }
+    #home {
+        height: calc(100vh - 50px);
+    }
 }
 
 #arrow {
@@ -376,7 +381,7 @@ body .indigo {
     height: auto;
     background-color: lightblue;
     animation: goingUp 30s linear infinite;
-    bottom: -30vh;
+    bottom: -20vh;
 }
 
 .squares li:nth-child(1){
