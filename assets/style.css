@@ -355,6 +355,10 @@ body .indigo {
     #home {
         height: calc(100svh - 50px);
     }
+    #about, #extracurriculars, #projects {
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
 
 #arrow {
