@@ -51,8 +51,20 @@ window.addEventListener('DOMContentLoaded', ()=>{
             }
         });
     });
+    const observer2 = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('showGrow');
+            } else {
+                entry.target.classList.remove('showGrow');
+            }
+        });
+    });
     const hiddenElements = document.querySelectorAll('.hidden');
     const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
+    const hiddenElementsSmall = document.querySelectorAll('.hidden-small');
     hiddenElements.forEach((el) => observer.observe(el));
     hiddenElementsLeft.forEach((el1) => observer.observe(el1));
+    hiddenElementsSmall.forEach((el2) => observer2.observe(el2));
 })
