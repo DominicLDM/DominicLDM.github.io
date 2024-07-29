@@ -553,7 +553,7 @@ body .indigo {
     height: auto;
     background-color: lightblue;
     animation: goingUp 30s linear infinite;
-    bottom: -20vh;
+    bottom: -20lvh;
 }
 
 .squares li:nth-child(1){
@@ -759,7 +759,7 @@ body .indigo {
         border-radius: 20%;
     }
     100%{
-        transform: translateY(-135vh) rotate(720deg);
+        transform: translateY(-135lvh) rotate(720deg);
         opacity: 0.3;
         border-radius: 20%;
     }
