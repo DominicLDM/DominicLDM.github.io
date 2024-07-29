@@ -45,7 +45,9 @@ window.addEventListener('DOMContentLoaded', ()=>{
             console.log(entry)
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-            } 
+            } else {
+                entry.targer.classList.remove('show');
+            }
         });
     });
     const hiddenElements = document.querySelectorAll('.hidden');
