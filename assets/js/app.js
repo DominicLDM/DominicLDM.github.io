@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
             } else {
-                entry.targer.classList.remove('show');
+                entry.target.classList.remove('show');
             }
         });
     });
