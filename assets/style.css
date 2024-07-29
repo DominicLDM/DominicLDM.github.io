@@ -354,6 +354,7 @@ body .indigo {
     }
     #home {
         height: calc(100lvh - 50px);
+        margin-top: 10px;
     }
 }
 
