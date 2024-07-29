@@ -1,7 +1,7 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
     document.querySelector('.animatedBg').style.height = '100vh';
-    window.scrollTo(0,1);
+    window.scrollTo(0,0);
     const hamMenu = document.querySelector('.hamburger-menu');
     const offScreen = document.querySelector('.off-screen-menu');
     hamMenu.addEventListener('click', ()=> {
@@ -28,6 +28,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
         setTimeout(()=>{
             intro.style.top = '-100vh';
             logo.style.display = 'none';
+            window.scrollTo(0,0);
+            document.body.classList.remove('no-scroll');
         }, 3680)
     }, 250)
     const header = document.querySelector('.sticky');
@@ -38,4 +40,16 @@ window.addEventListener('DOMContentLoaded', ()=>{
             header.classList.remove('blue');
         }
     }
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry)
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } 
+        });
+    });
+    const hiddenElements = document.querySelectorAll('.hidden');
+    const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
+    hiddenElements.forEach((el) => observer.observe(el));
+    hiddenElementsLeft.forEach((el1) => observer.observe(el1));
 })
