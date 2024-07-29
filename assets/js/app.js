@@ -24,6 +24,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
                     span.classList.add('fade');
                 }, (idx + 1) * 100)
             })
+            window.scrollTo(0,0);
         }, 3000);
         setTimeout(()=>{
             intro.style.top = '-100lvh';
