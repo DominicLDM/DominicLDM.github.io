@@ -263,7 +263,6 @@ body .indigo {
 }
 
 #home {
-    margin-top: 0;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -394,7 +393,7 @@ body .indigo {
 
 .timeline-date {
     margin-top: 20px;
-    color:#3f36c6;
+    color: #150f64;
     font-weight: 800;
 }
 
@@ -426,10 +425,11 @@ body .indigo {
 
 #about-intro {
     padding-top: 20px;
+    padding-bottom: 10px;
     font-size: 40px;
     text-align: center;
     background-image: 
-        linear-gradient(90deg, #7987f8, #3f36c6);
+        linear-gradient(90deg, #7987f8, #7987f8);
     background-clip: text;
     color: transparent;
 }
