@@ -1,6 +1,6 @@
 
 window.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelector('.animatedBg').style.height = '100vh';
+    document.querySelector('.animatedBg').style.height = '100lvh';
     window.scrollTo(0,0);
     const hamMenu = document.querySelector('.hamburger-menu');
     const offScreen = document.querySelector('.off-screen-menu');
@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
             })
         }, 3000);
         setTimeout(()=>{
-            intro.style.top = '-100vh';
+            intro.style.top = '-100lvh';
             logo.style.display = 'none';
             window.scrollTo(0,0);
             document.body.classList.remove('no-scroll');
