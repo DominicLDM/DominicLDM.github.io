@@ -326,7 +326,7 @@ body .indigo {
     transform: scale(1.1);
 }
 
-@media (max-width: 426px) {
+@media (max-width: 430px) {
     #name {
         font-size: 225%;
         padding: 0px 20px;
@@ -354,6 +354,7 @@ body .indigo {
     }
     #home {
         height: calc(100svh - 50px);
+        margin-top: -20px;
     }
 }
 
