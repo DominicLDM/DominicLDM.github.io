@@ -565,6 +565,18 @@ body .indigo {
     }
 }
 
+.hidden-title {
+    opacity: 0;
+    transform: translateY(70%);
+    transition: all 0.6s;
+}
+
+.showTitle {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
 .delete {
     display: block;
 }
@@ -594,12 +606,64 @@ body .indigo {
     margin: 0px 30px;
 }
 
+#projects {
+    margin: 0px 30px;
+}
+
+#projects-box {
+    padding-top: 40px;
+    max-width: 1800px;
+    margin: auto;
+    padding-bottom: 60px;
+}
+
+.info h3 {
+    font-size: 36px;
+    color: #c299e5;
+}
+
+.project {
+    display: flex;
+    padding: 25px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 16px 8px rgb(192, 203, 240);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.info {
+    align-self: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 55%;
+    padding: 10px;
+}
+
+.project-img {
+    display: flex;
+    width: 45%;
+    padding: 10px;
+}
+
+.project-img img {
+    border-radius: 10px; 
+    height: auto; 
+    width: 100%;
+    box-shadow: 0px 0px 10px 1px rgba(194, 153, 229, 0.4);
+}
+
+.github-big {
+    font-size: 50px !important;
+    padding-bottom: 0px !important;
+}
+
 #skills-box {
     padding-top: 30px;
     max-width: 1500px;
     margin: auto;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .grid-cards {
@@ -623,12 +687,13 @@ body .indigo {
 .grid-inner h3 {
     padding-top: 5px;
     font-size: 22px;
+    color: black;
 }
 
 .grid-inner:hover {
     transition: transform 0.2s ease-in-out, color 0.2s;
     transform: scale(1.1) !important;
-    color: #7987f8;
+    color: #6b7bf7;
 }
 
 @media (max-width: 800px) {
@@ -646,6 +711,18 @@ body .indigo {
     }
     .timeline-comp-bg {
         padding: 0.5em 1em;
+    }
+    .grid-logo {
+        color: #6b7bf7;
+    }
+    .info {
+        width: 100%;
+    }
+    .project-img {
+        width: 100%;
+    }
+    .project {
+        display: block;
     }
 }
 
