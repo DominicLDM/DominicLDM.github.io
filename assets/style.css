@@ -628,8 +628,8 @@ body .indigo {
     background-color: rgba(255,255,255,0.8);
     box-shadow: 0px 0px 16px 8px rgb(192, 203, 240);
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 .info {
