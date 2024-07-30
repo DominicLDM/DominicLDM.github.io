@@ -22,6 +22,10 @@ html, body {
     padding: 1.5rem 2rem 1rem;
 }
 
+#me {
+    box-shadow: 0 0 15px 5px rgba(194, 153, 229, 0.4);
+}
+
 .sticky {
     position: sticky;
     top: 0;
@@ -33,7 +37,7 @@ html, body {
 
 .sticky.blue {
     transition: background-color 0.4s ease-in-out;
-    background-color: #cbe5f1 !important;
+    background-color: #caaae9 !important;
 }
 
 #DOM {
@@ -297,7 +301,7 @@ body .indigo {
     height: auto;
 }
 #name {
-    font-size: 44px;
+    font-size: 48px;
 }
 
 
@@ -373,6 +377,7 @@ body .indigo {
     display: grid;
     grid-template-columns: 1fr 6px 1fr;
     z-index: 100;
+    margin-bottom: 30px;
 }
 
 .timeline-comp {
@@ -433,15 +438,12 @@ body .indigo {
     margin-top: -85.67px;
 }
 
-#about-intro {
+.section-header {
     padding-top: 20px;
     padding-bottom: 10px;
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
-    background-image: 
-        linear-gradient(90deg, #7987f8, #7987f8);
-    background-clip: text;
-    color: transparent;
+    color:#6b7cf8;
 }
 
 .point {
@@ -529,6 +531,34 @@ body .indigo {
     }
 }
 
+.hidden-grid {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.showGrowGrid {
+    filter: blur(0);
+    animation: bounce-in-grid 0.9s ease-in-out forwards;
+}
+
+@keyframes bounce-in-grid {
+    0% {
+        opacity: 0;
+        transform: scale(.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(.95); 
+    }
+    100% {
+        transform: scale(1); 
+        opacity: 1; 
+    }
+}
+
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -546,6 +576,7 @@ body .indigo {
     display: grid;
     grid-template-columns: 6px 1fr;
     z-index: 100;
+    margin-bottom: 25px;
 }
 
 .timeline-point-mobile {
@@ -557,6 +588,47 @@ body .indigo {
     border-radius: 50%;
     width: 45px;
     height: 45px;
+}
+
+#skills {
+    margin: 0px 30px;
+}
+
+#skills-box {
+    padding-top: 30px;
+    max-width: 1500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.grid-cards {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.grid-inner {
+    padding: 20px;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 10px 4px rgb(192, 203, 240);
+    border-radius: 10px;
+}
+
+.grid-logo {
+    padding-top: 5px;
+    font-size: 64px;
+}
+
+.grid-inner h3 {
+    padding-top: 5px;
+    font-size: 22px;
+}
+
+.grid-inner:hover {
+    transition: transform 0.2s ease-in-out, color 0.2s;
+    transform: scale(1.1) !important;
+    color: #7987f8;
 }
 
 @media (max-width: 800px) {
