@@ -807,14 +807,14 @@ body .indigo {
 }
 
 .contact-container2 {
-    padding: 20px;
+    padding: 30px;
     max-width: 1000px;
     background-color: rgba(255,255,255,0.82);
     border-radius: 10px;
     box-shadow: 0px 0px 16px 8px rgb(192, 203, 240);
     align-items: center;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
@@ -829,10 +829,32 @@ input[type=text], input[type=email], textarea {
     font-weight: 400;
     font-family: Noto Sans;
     border: 1px;
+    background-color: lightgrey;
+    box-shadow: 0px 0px 1px 1px rgb(192, 203, 240);
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: 1px solid black;
 }
 
 label {
-    color:#c299e5
+    color:#c299e5;
+}
+
+button[type=submit] {
+    background-color: #6b7bf7;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 6px 12px;
+    border: 1px;
+    box-shadow: 0px 0px 4px 2px rgb(192, 203, 240);
+}
+
+button[type=submit]:hover {
+    background-color:#5a6ae6;
+    color: lightgrey;
+    cursor: pointer;
 }
 
 
