@@ -83,7 +83,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     });
     const ecas = document.querySelectorAll('.item');
     ecas.forEach(element =>{
-        element.addEventListener('touchend', ()=>{
+        element.addEventListener('touchstart', ()=>{
             element.classList.toggle('click');
         })
     })

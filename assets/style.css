@@ -838,6 +838,11 @@ body .indigo {
     .item {
         margin: 20px;
     }
+
+    .detail {
+        height: calc(100% - 6px);
+    }
+
     .detail h3 {
         font-size: 26px;
     }
