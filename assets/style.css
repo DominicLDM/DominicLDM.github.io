@@ -363,6 +363,10 @@ body .indigo {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
+    #projects {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
 }
 
 #arrow {
@@ -394,13 +398,19 @@ body .indigo {
     word-wrap: break-word;
 }
 
+.detail h3 {
+    font-size: 32px;
+    color: #c299e5;
+    word-wrap: break-word;
+}
+
 .timeline-paragraph {
     line-height : 1.5;
     font-size: 18px;
 }
 .timeline-comp-bg {
     padding: 0.5em 1.5em;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.82);
     box-shadow: 0px 0px 15px 5px rgb(192, 203, 240);
     border-radius: 10px;
 }
@@ -434,6 +444,11 @@ body .indigo {
 
 #about {
     z-index: 2;
+    padding-top: 85.67px;
+    margin-top: -85.67px;
+}
+
+#projects {
     padding-top: 85.67px;
     margin-top: -85.67px;
 }
@@ -625,7 +640,7 @@ body .indigo {
 .project {
     display: flex;
     padding: 25px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.82);
     box-shadow: 0px 0px 16px 8px rgb(192, 203, 240);
     border-radius: 10px;
     margin-top: 20px;
@@ -674,7 +689,7 @@ body .indigo {
 
 .grid-inner {
     padding: 20px;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.82);
     box-shadow: 0px 0px 10px 4px rgb(192, 203, 240);
     border-radius: 10px;
 }
@@ -694,6 +709,80 @@ body .indigo {
     transition: transform 0.2s ease-in-out, color 0.2s;
     transform: scale(1.1) !important;
     color: #6b7bf7;
+}
+
+#gallery {
+    max-width: 1500px;
+    width: 90%;
+    margin: auto;
+    padding: 60px 0 40px 0;
+}
+
+.photo-gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px 4px rgb(192, 203, 240);
+}
+
+.detail {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+
+.detail:hover, .detail:active {
+    opacity: 1;
+}
+
+.detail p {
+    padding-top: 16px;
+    text-align: center;
+    color:#f0f1fa;
+}
+
+.detail h3 {
+    text-align: center;
+}
+
+.detail > * {
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+
+.detail:hover > *, .detail:active > * {
+    transform: translateY(0px);
 }
 
 @media (max-width: 800px) {
@@ -725,7 +814,26 @@ body .indigo {
     .project {
         display: block;
     }
+    .photo-gallery {
+        display: block;
+        width: 100%;
+    }
+    .column {
+        display: block;
+        width: 100%;
+    }
+    .item {
+        margin: 20px;
+    }
+    .detail h3 {
+        font-size: 28px;
+    }
+    .detail p {
+        font-size: 14px;
+    }
+
 }
+
 
 @media (min-width: 800px) {
     #timeline-mobile {
