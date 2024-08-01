@@ -81,6 +81,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
             }
         });
     });
+    const ecas = document.querySelectorAll('.item');
+    ecas.forEach(element =>{
+        element.addEventListener('touchend', ()=>{
+            element.classList.toggle('click');
+        })
+    })
     const hiddenElements = document.querySelectorAll('.hidden');
     const hiddenElementsLeft = document.querySelectorAll('.hiddenLeft');
     const hiddenElementsSmall = document.querySelectorAll('.hidden-small');
