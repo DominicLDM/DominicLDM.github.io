@@ -733,6 +733,7 @@ body .indigo {
 .photo-gallery {
     display: flex;
     gap: 20px;
+    padding-bottom: 40px;
 }
 
 .column {
@@ -795,6 +796,43 @@ body .indigo {
 
 .detail:hover > *, .detail.click > * {
     transform: translateY(0px);
+}
+
+#contact {
+    padding-top: 20px;
+}
+
+.contact-container1 {
+    margin: 0 30px;
+}
+
+.contact-container2 {
+    padding: 20px;
+    max-width: 1000px;
+    background-color: rgba(255,255,255,0.82);
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 8px rgb(192, 203, 240);
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+    font-weight: 400;
+    font-family: Noto Sans;
+    border: 1px;
+}
+
+label {
+    color:#c299e5
 }
 
 
