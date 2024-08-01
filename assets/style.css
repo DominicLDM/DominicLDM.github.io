@@ -318,7 +318,7 @@ body .indigo {
     vertical-align: center;
 }
 
-.socials {
+.socials, .socialsfooter {
     font-size: 40px;
 }
 
@@ -815,7 +815,7 @@ body .indigo {
     align-items: center;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 input[type=text], input[type=email], textarea {
@@ -857,6 +857,16 @@ button[type=submit]:hover {
     cursor: pointer;
 }
 
+#footer {
+    height: 100px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#copyright {
+    margin-top: -4px;
+}
 
 @media (max-width: 800px) {
     #timeline-mobile {
