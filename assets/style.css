@@ -829,7 +829,7 @@ input[type=text], input[type=email], textarea {
     font-weight: 400;
     font-family: Noto Sans;
     border: 1px;
-    background-color: lightgrey;
+    background-color: rgb(230, 230, 230);
     box-shadow: 0px 0px 1px 1px rgb(192, 203, 240);
 }
 
