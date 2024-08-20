@@ -23,9 +23,18 @@ html, body {
 }
 
 #me {
-    box-shadow: 0 0 15px 5px rgba(194, 153, 229, 0.4);
+    animation: color-change 6s infinite;
 }
 
+@keyframes color-change {
+    0% { box-shadow: 0 0 15px 5px rgba(207, 153, 229, 0.4);}
+    18.3% { box-shadow: 0 0 10px 3px rgba(187, 153, 229, 0.4);}
+    36.6% { box-shadow: 0 0 15px 5px rgba(153, 153, 229, 0.4);}
+    50% { box-shadow: 0 0 10px 3px rgba(153, 182, 229, 0.4);}
+    68.3% { box-shadow: 0 0 15px 5px rgba(153, 210, 229, 0.4);}
+    83.6% { box-shadow: 0 0 10px 3px rgba(153, 229, 226, 0.4);}
+    100% { box-shadow: 0 0 15px 5px rgba(207, 153, 229, 0.4);}
+}
 .sticky {
     position: sticky;
     top: 0;
@@ -353,8 +362,8 @@ body .indigo {
         margin-top: 0% !important;
     }
     #me {
-        height: 250px;
-        width: 250px;
+        height: 250px !important;
+        width: 250px !important;
     }
     #home {
         height: calc(100svh - 50px);
@@ -942,6 +951,15 @@ button[type=submit]:hover {
 
 }
 
+@media (max-height: 800px) {
+    #me {
+        width: 390px;
+        height: 390px;
+    }
+    #arrow {
+        display: none;
+    }
+}
 
 @media (min-width: 800px) {
     #timeline-mobile {
