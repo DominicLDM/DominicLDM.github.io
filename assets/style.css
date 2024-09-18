@@ -948,7 +948,10 @@ button[type=submit]:hover {
     #contact {
         padding-top: 0;
     }
-
+    .me {
+        width: 300px !important;
+        height: 300px !important;
+    }
 }
 
 @media (max-height: 800px) {
